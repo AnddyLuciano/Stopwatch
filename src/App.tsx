@@ -7,7 +7,6 @@ function App() {
     const [minute, setMinute] = useState<number>(0);
     const [hour, setHour] = useState<number>(0);
     const [isRunning, setIsRunning] = useState<boolean>(false);
-    const [openDialog, setOpenDialog] = useState<boolean>(false);
 
     useEffect(() => {
         let intervalId: number;
@@ -41,7 +40,6 @@ function App() {
         setSeconde(0);
         setMinute(0);
         setHour(0);
-        setOpenDialog(true);
     };
     return (
         <main className="relative w-screen h-screen bg-slate-100">
@@ -78,7 +76,7 @@ function App() {
                         </div>
                         <button
                             onClick={stopTimer}
-                            disabled={openDialog === true || t <= 0}
+                            disabled={isRunning === false}
                             className="bg-blue-300 text-white"
                         >
                             <i className="fa-solid fa-stop"></i>
