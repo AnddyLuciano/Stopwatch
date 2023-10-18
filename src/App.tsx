@@ -44,7 +44,7 @@ function App() {
     return (
         <main className="relative w-screen h-screen bg-slate-100">
             <div className="w-full h-full flex items-center justify-center flex-col">
-                <div className="bg-white w-1/5 h-1/4 rounded-sm shadow-[10px_10px_4px_-4px_rgba(213,220,217,1)]">
+                <div className="bg-white w-1/5 h-1/4 rounded-sm shadow-[10px_10px_4px_-4px_rgba(0,0,0,0.3)]">
                     <div className="text-5xl font-open-sans text-[#657070] h-3/4 flex items-center justify-center relative">
                         <span>
                             {hour.toString().length < 2
